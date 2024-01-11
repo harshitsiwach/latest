@@ -24,11 +24,15 @@ const PrivacyPolicy = () => {
           <h2 className={styles.subHeading}>2. Data Collection Specifics</h2>
           <p className={styles.paragraph}>
             In EVM Warfare, we focus on enhancing your gameplay experience through the following types of data:
-            <ul>
-              <li>Behavioral Data: This includes your strategies, choices, and in-game interactions. By understanding your play style, we aim to continuously improve game dynamics and provide personalized challenges.</li>
-              <li>Social Data: Your interactions with other players and your preferences in the game help us build a vibrant and engaging community. We use this data to foster better player connections and tailor community events.</li>
-            </ul>
           </p>
+          <ul>
+            <li className={styles.paragraph}>
+              Behavioral Data: This includes your strategies, choices, and in-game interactions. By understanding your play style, we aim to continuously improve game dynamics and provide personalized challenges.
+            </li>
+            <li className={styles.paragraph}>
+              Social Data: Your interactions with other players and your preferences in the game help us build a vibrant and engaging community. We use this data to foster better player connections and tailor community events.
+            </li>
+          </ul>
         </div>
 
         {/* Section 3: Blockchain Integration and Privacy */}
