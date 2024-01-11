@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+@font-face {
+  font-family: "lemon-milk";
+  src: url("../../public/fonts/LEMONMILK-Regular.otf");
+}
+@font-face {
+  font-family: "lemon-milk-bold";
+  src: url("../../public/fonts/LEMONMILK-Bold.otf");
+}
+@font-face {
+  font-family: "lemon-milk-light";
+  src: url("../../public/fonts/LEMONMILK-Light.otf");
+}
+@font-face {
+  font-family: "lemon-milk-medium";
+  src: url("../../public/fonts/LEMONMILK-Medium.otf");
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* HEADER CSS */ /* HEADER CSS */ /* HEADER CSS */ /* HEADER CSS */ /* HEADER CSS */ 
+
+@keyframes colorChange {
+  0% { color: rgb(255, 255, 255); }
+  50% { color: rgb(153, 150, 150); }
+  75% { color: rgb(29, 29, 29); }
+  100% { color: rgb(210, 208, 208); }
+}
+
+.animate-colorChange {
+  animation: colorChange 3s infinite;
+}
+
+@keyframes bubble {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.hover\:bubble:hover {
+  animation: bubble 1s ;
+  color: #666;
+}
+
+/* HEADER CSS */ /* HEADER CSS */ /* HEADER CSS */ /* HEADER CSS */ /* HEADER CSS */ 
+
+/*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/ /*HOME CSS*/
+
+.slick-dots li.slick-active button:before {
+  color: #fff; /* Active dot color */
+  box-shadow: 0 0 10px 3px rgba(247, 245, 245, 0.6); /* Glow effect */
+  border-radius: 20px;
+}
+
+@keyframes radialFade {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.background-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: currentColor; /* Use the current color for the background */
+  border-radius: 50%;
+  animation: radialFade 0.8s ease-out forwards;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.character-slider {
+  width: 50%;
+}
+
+.character-description {
+  width: 50%;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.fade-in-out {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 5px;
+}
+
+.marquee {
+  display: flex; /* Changed to flex to better control the layout */
+  animation: marquee 20s linear infinite;
+}
+
+.marquee.right-to-left {
+  animation-direction: reverse;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Adjusted to -50% for the doubled content */
+}
+
+.marquee img {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between logos */
+}
+
+/*GUNS PAGE CSS*/
+
+.guns-page-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gun-slider {
+  width: 50%;
+}
+
+.gun-description {
+  width: 50%;
+  animation: fadeInOut 1s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.shadow-cyan {
+  box-shadow: 0 4px 14px 0 rgba(72, 187, 120, 0.5); /* Example shadow, adjust as needed */
+}
+
+
+
