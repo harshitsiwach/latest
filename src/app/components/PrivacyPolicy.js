@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from '../page.module.css';
+import Link from 'next/link';
+import { Target } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
@@ -24,11 +26,15 @@ const PrivacyPolicy = () => {
           <h2 className={styles.subHeading}>2. Data Collection Specifics</h2>
           <p className={styles.paragraph}>
             In EVM Warfare, we focus on enhancing your gameplay experience through the following types of data:
-            <ul>
-              <li>Behavioral Data: This includes your strategies, choices, and in-game interactions. By understanding your play style, we aim to continuously improve game dynamics and provide personalized challenges.</li>
-              <li>Social Data: Your interactions with other players and your preferences in the game help us build a vibrant and engaging community. We use this data to foster better player connections and tailor community events.</li>
-            </ul>
           </p>
+          <ul>
+            <li className={styles.paragraph}>
+              Behavioral Data: This includes your strategies, choices, and in-game interactions. By understanding your play style, we aim to continuously improve game dynamics and provide personalized challenges.
+            </li>
+            <li className={styles.paragraph}>
+              Social Data: Your interactions with other players and your preferences in the game help us build a vibrant and engaging community. We use this data to foster better player connections and tailor community events.
+            </li>
+          </ul>
         </div>
 
         {/* Section 3: Blockchain Integration and Privacy */}
@@ -89,9 +95,17 @@ const PrivacyPolicy = () => {
 
         {/* Section 10: Contact Information and User Support */}
         <div className={styles.box}>
-          <h2 className={styles.subHeading}>10. Contact Information and User Support</h2>
+          <h2 className={styles.subHeading}>10. Contact Information and User Support</h2><br></br>
+          <h3 className={styles.subHeading}>A. Contacting Us</h3>
           <p className={styles.paragraph}>
-            For any privacy-related inquiries, please reach out to us via our social media platforms or email. We're here to assist you and address your concerns.
+          If you have any questions about this Policy, our practices regarding your personal information related to the Site or Game, or if you would like to have us remove your information from our database and deactivate your Account, please contact us at <Link href="">evmwarfare@proton.me</Link> or reach out to us via our social media platforms [<Link href={"https://twitter.com/ShardeumScape"} target='blank'>Twitter / X</Link>] [<Link href={"https://discord.gg/H42wMEXrbg"} target='blank'>Discord</Link>] [<Link href={"https://www.instagram.com/evm_warfare/"} target='blank'>Instagram</Link>] . We will respond to your request to access within 7 days. We're here to assist you and address your concerns. <br></br>
+          Please note that the deletion of your data will lead to the termination of your Account and applicable services. However, also note that when you delete your Account, we may retain your Account information for a reasonable period of time afterward for the purpose of internal account management and fraud prevention activities.
+          </p>
+
+          <h3 className={styles.subHeading}>B. Updates and Changes</h3>
+          <p className={styles.paragraph}>
+          We may update this privacy statement to reflect changes to our information practices. If we make any material changes we will notify you by email (sent to the e-mail address specified in your account) or by means of a notice on this Site prior to the change becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices.
+          BY USING THE SITE AND/OR THE GAME, YOU SIGNIFY THAT YOU HAVE READ, UNDERSTAND AND AGREE TO THE TERMS OF THIS PRIVACY POLICY. IF YOU DO NOT AGREE WITH THIS PRIVACY POLICY, PLEASE DO NOT USE THE SITE OR THE GAME.
           </p>
         </div>
       </div>
