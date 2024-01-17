@@ -8,6 +8,7 @@ import Header from "./Header";
 import SUpportedChains from './SupportedChains';
 import PrivacyPolicy from './PrivacyPolicy';
 import Link from 'next/link';
+import Team from './Team';
 
 function Homepage() {
    
@@ -27,10 +28,7 @@ function Homepage() {
             <Guns/>
         </div>
       <div className="flex justify-center mt-4">
-        <video width="480" height="480" autoPlay loop muted className="rounded-lg video-center">
-          <source src="/videos/team.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <Team/>
       </div>
 
         <div>
