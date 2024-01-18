@@ -146,35 +146,49 @@ function Home() {
           </div>
         </div>
 
-            {/* Marquee LOGOS Slider Section */}
-        <div className="marquee-container bg-slate-300">
-          <div className="marquee left-to-right">
-            {/* Add your logos here */}
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"60px", width:"50px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"80px", width:"230px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"250px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"70px", width:"250px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"90px", width:"250px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
-            {/* ... more logos */}
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"60px", width:"50px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"80px", width:"230px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"100px", width:"250px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"70px", width:"250px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"90px", width:"250px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"60px", width:"50px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"80px", width:"230px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"100px", width:"250px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"70px", width:"250px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"90px", width:"250px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"60px", width:"50px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"80px", width:"230px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"100px", width:"250px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"70px", width:"250px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
-            <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{height:"90px", width:"250px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+          {/* Marquee LOGOS Slider Section */}
 
-          </div>
-    
-        </div>
+          <div className='bg-white' style={{paddingTop:"0.5px", paddingBottom:"0.5px", }}></div>
+
+<div className="marquee-container bg-light-black py-6" >
+  <div className="marquee left-to-right">
+    {/* Add your logos here */}
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+    {/* ... more logos */}
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/EpicGames.png" alt="Logo 1" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Polygon.png" alt="Logo 2" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/RPMe.png" alt="Logo 3" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/Shm.png" alt="Logo 4" />
+    <img className="drop-shadow-[0_10px_5px_rgba(18,18,18,0.5)]" style={{  height:"100px", width:"auto", paddingLeft:"10px", paddingRight:"10px"}} src="/images/Logos/UnrealEngine.png" alt="Logo 5" />
+  </div>
+
+</div>
+
+<div className='bg-white' style={{paddingTop:"0.5px", paddingBottom:"0.5px", }}></div>
 
     </home>
   );
