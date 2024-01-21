@@ -1,33 +1,39 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 
 function Team() {
+  // URLs of the Spline scenes
+  const splineScenes = [
+    "https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode",
+    "https://prod.spline.design/eLo1oNfD8BVhQd-b/scene.splinecode",
+    "https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode",
+    "https://prod.spline.design/eLo1oNfD8BVhQd-b/scene.splinecode",
+    "https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode",
+    "https://prod.spline.design/eLo1oNfD8BVhQd-b/scene.splinecode",
+    // Add more URLs as needed
+  ];
+
+  // State to track the current slide
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    // Change slide every 3 seconds (3000 milliseconds)
+    const timer = setInterval(() => {
+      setCurrentSlide(prevSlide =>
+        prevSlide === splineScenes.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 1500);
+
+    // Clear the timer when the component unmounts
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <main className='w-full bg-black'>
-      {/* First row of 3 Splines */}
-      <div className='grid grid-cols-3'>
-        <div className='w-96 h-96'> {/* Adjust width and height as needed */}
-          <Spline scene="https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode" />
-        </div>
-        <div className='w-96 h-96'>
-          <Spline scene="https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode" />
-        </div>
-        <div className='w-96 h-96'>
-          <Spline scene="https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode" />
-        </div>
-      </div>
-
-      {/* Second row of 3 Splines */}
-      <div className='grid grid-cols-3 gap-4'>
-        <div className='w-96 h-96'>
-          <Spline scene="https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode" />
-        </div>
-        <div className='w-96 h-96'>
-          <Spline scene="https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode" />
-        </div>
-        <div className='w-96 h-96'>
-          <Spline scene="https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode" />
+      <div className='grid grid-cols-1'>
+        <div > {/* Adjust width and height as needed */}
+          <Spline scene={splineScenes[currentSlide]} />
         </div>
       </div>
     </main>

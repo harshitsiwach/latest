@@ -7,7 +7,7 @@ const Header = () => {
 
   const handleConnectWallet = () => {
     setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 1500); // The popup will disappear after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000); // The popup will disappear after 3 seconds
   };
 
   return (
