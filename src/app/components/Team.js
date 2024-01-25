@@ -12,6 +12,7 @@ function Team() {
   "https://prod.spline.design/eLo1oNfD8BVhQd-b/scene.splinecode",
   "https://prod.spline.design/GISZpptJtmvD75VN/scene.splinecode",
   "https://prod.spline.design/eLo1oNfD8BVhQd-b/scene.splinecode",
+  
 ];
 
   // State to track loading of a new slide

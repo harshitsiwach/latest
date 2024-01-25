@@ -24,7 +24,7 @@ export default function Home() {
       {isLoading && <LoadingScreen />}
       <div style={{ visibility: isLoading ? 'hidden' : 'visible' }}>
         {/* Your main app content */}
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Homepage />
       </div>
     </>   
