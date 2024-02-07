@@ -20,6 +20,13 @@
   src: url("../../public/fonts/LEMONMILK-Medium.otf");
 }
 
+/* Target the text inside the RainbowKit Connect button */
+.rk_button_text {
+  text-transform: uppercase;
+  /* If you want to be more specific, you can add other font properties here */
+  font-family: 'lemon-milk', system-ui, sans-serif; /* Replace 'YourFontFamily' with the actual font family */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

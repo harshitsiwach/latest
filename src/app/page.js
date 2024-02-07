@@ -11,7 +11,7 @@ export default function Home() {
     // Set a timeout to change the loading state after 5 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 1000);
 
     // Clear the timer if the component unmounts
     return () => clearTimeout(timer);

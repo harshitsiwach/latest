@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 const Header = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -26,14 +28,18 @@ const Header = () => {
 
             {/* Company Name */}
             <h1 className="text-slate-400 font-lemon-milk animate-colorChange">EVM Warfare</h1>
-
-            {/* Connect Wallet Button */}
-            <button 
-              className="bg-gray-400 hover:bg-grey text-white px-4 py-2 rounded-lg hover:bubble font-lemon-milk"
-              onClick={handleConnectWallet}
-            >
-              Connect Wallet
+            {/* Download the rar*/}
+            <button  className="bg-gray-400 hover:bg-grey text-white px-4 py-2 rounded-lg hover:bubble font-lemon-milk">
+              Download
             </button>
+            {/* Connect Wallet Button */}
+          
+            <ConnectButton
+            accountStatus={{
+              smallScreen: 'avatar',
+              largeScreen: 'full',
+            }}
+             />
           </div>
         </div>
       </header>

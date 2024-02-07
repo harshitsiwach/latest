@@ -107,6 +107,12 @@ function Home() {
   };
 
   const [currentCharacterIndex, setCurrentCharacterIndex] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Function to toggle popup
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -118,7 +124,21 @@ function Home() {
 
   return (
     <home>
-      <div> <Spline scene="https://prod.spline.design/PLVh7S-Ybh-5W8J2/scene.splinecode" /> </div>
+     <div>
+      {/* Spline component for non-mobile (larger screens) */}
+      <div className="hidden sm:block">
+        <Spline scene="https://prod.spline.design/PLVh7S-Ybh-5W8J2/scene.splinecode" />
+      </div>
+
+      {/* Text message for mobile version */}
+      <div className="block sm:hidden text-center px-4 bg-light-black font-lemon-milk text-white py-36 ">
+        <p className="text-5xl py-8 font-bold">EVM WARFARE</p>
+        <p className="text-lg">Revolutionizing gaming</p>
+        <p className="text-lg">with</p>
+        <p className="text-lg">web3 and Unreal Engine</p>
+      </div>
+    </div>
+
 
             {/* Image Slider Section */}
           <div className="flex justify-center items-center bg-light-black">
@@ -135,16 +155,45 @@ function Home() {
               ))}
             </Slider>
           </div>
+          <div className="page-container bg-light-black py-8 px-4 sm:py-32 sm:px-48 w-full">
+  {/* Mobile Version: Center the character slider */}
+  <div className="flex sm:hidden flex-col items-center justify-center w-full">
+    <div className="character-slider w-full flex justify-center items-center">
+      <CharacterSlider currentCharacter={characters[currentCharacterIndex]} scale={[2, 2, 2]} />
+    </div>
+    <div className="mt-4 w-full flex justify-center">
+      <button onClick={togglePopup} className="more-info-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        More Info
+      </button>
+    </div>
+  </div>
 
-            {/* 3D Character Slider Section */}
-        <div className="page-container bg-light-black py-32 px-48">
-          <div className="character-slider drop-shadow-[0_35px_35px_rgba(225,225,225,0.5)]">
-            <CharacterSlider currentCharacter={characters[currentCharacterIndex]} scale={[2, 2, 2]} />
-          </div>
-          <div className="character-description flex justify-center py-72 font-lemon-milk font-bold drop-shadow-lg text-white">
-            <CharacterDescription currentCharacter={characters[currentCharacterIndex]} />
-          </div>
-        </div>
+  {/* Larger Screen Version: Character slider on the left and description on the right */}
+  <div className="hidden sm:flex flex-row items-center justify-start w-full">
+    <div className="character-slider flex-1 flex justify-center items-center">
+      <CharacterSlider currentCharacter={characters[currentCharacterIndex]} scale={[2, 2, 2]} />
+    </div>
+    <div className="character-description flex-1 text-white font-bold">
+      <CharacterDescription currentCharacter={characters[currentCharacterIndex]} />
+    </div>
+  </div>
+
+  {/* Popup for character description */}
+  {showPopup && (
+    <div className="popup-container fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+      <div className="bg-white p-5 rounded-lg">
+        <CharacterDescription currentCharacter={characters[currentCharacterIndex]} />
+        <button onClick={togglePopup} className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          Close
+        </button>
+      </div>
+    </div>
+  )}
+</div>
+
+
+
+
 
           {/* Marquee LOGOS Slider Section */}
 
