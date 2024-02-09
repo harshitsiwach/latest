@@ -15,32 +15,32 @@ import { useThree } from '@react-three/fiber';
 // Character Data
 const characters = [
   {
-    name: "Character 1",
-    description: "Description for Character 1",
+    name: "Maverick Specter",
+    description: "Maverick Specter Stone, the sharpshooter in all-white, embodies modern cowboy finesse on the EVM Warfare battlegrounds. Standing tall at 6 feet, Maverick's lethal precision and strategic maneuvers make him a formidable force. With every shot, he paints a masterpiece of calculated elegance.",
     modelPath: "/shiba/1/1.gltf",
     scale: [2, 2, 2]
   },
   {
-    name: "Character 2",
-    description: "Description for Character 1",
+    name: "Blake Shadowpaw",
+    description: "Blake Shadowpaw, the enigmatic prowler, moves through EVM Warfare like a shadow. Swift and unpredictable, Blake's every step injects an air of uncertainty. His silent infiltrations and unpredictable adventures make him a force to be reckoned with on the battlefield.",
     modelPath: "/shiba/2/2.gltf",
     scale: [2, 2, 2]
   },
   {
-    name: "Character 3",
-    description: "Description for Character 1",
+    name: "Storm Rider",
+    description: "Storm Rider charges into action, clad in a vibrant red riding jacket, injecting the battlefield with a surge of adrenaline. As the embodiment of speed, Storm Rider defies conventions, turning each encounter into a dynamic showcase of resolute determination and lightning-fast maneuvers.",
     modelPath: "/shiba/3/3.gltf",
     scale: [2, 2, 2]
   },
   {
-    name: "Character 4",
-    description: "Description for Character 1",
+    name: "Serena Swift",
+    description: "In the fast-paced world of EVM Warfare, Serena Swift's agility and precision redefine battlefield finesse. Her calculated grace and tenacity make her a formidable strategist. Swift's mastery of tactics adds an unpredictable edge, ensuring adversaries are kept on their toes.",
     modelPath: "/shiba/4/4.gltf",
     scale: [2, 2, 2]
   },
   {
-    name: "Character 5",
-    description: "Description for Character 1",
+    name: "Max Shadow",
+    description: "Max Shadow, the mysterious strategist, navigates the digital shadows with unparalleled skill. A seasoned warrior, Max's every move shapes the destiny of EVM Warfare. An enigma on the battlefield, Max Shadow is felt but rarely seen, leaving opponents in perpetual suspense.",
     modelPath: "/shiba/5/8r.gltf",
     scale: [2, 2, 2]
   },
