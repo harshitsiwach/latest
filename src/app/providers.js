@@ -22,7 +22,14 @@ import {
   polygon,
   sepolia,
   zora,
+  shardeumSphinx,
 } from 'wagmi/chains';
+
+// Define your custom ShardeumSphinx chain object with a logo
+const customShardeumSphinx = {
+  ...shardeumSphinx,
+  iconUrl: '/images/Logos/Shm-log.png', // Use the relative path to your logo file
+};
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
@@ -32,6 +39,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     arbitrum,
     base,
     zora,
+    customShardeumSphinx,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   [publicProvider()]
