@@ -6,6 +6,7 @@ import {
   getDefaultWallets,
   connectorsForWallets,
   darkTheme,
+  Chain,
 } from '@rainbow-me/rainbowkit';
 import {
   argentWallet,
@@ -31,6 +32,50 @@ const customShardeumSphinx = {
   iconUrl: '/images/Logos/Shm-log.png', // Use the relative path to your logo file
 };
 
+const taikoKatla = ({
+  id: 167008,
+  name: 'Taiko Katla (Alpha-6 Testnet)',
+  network: 'tko-katla',
+  nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+  rpcUrls: {
+    default: {
+      http: ['https://rpc.katla.taiko.xyz'],
+    },
+    public: {
+      http: ['https://rpc.katla.taiko.xyz'],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: 'blockscout',
+      url: 'https://explorer.katla.taiko.xyz',
+    },
+  },
+});
+
+const x1Testnet = ({
+  id: 195,
+  name: 'X1 Testnet',
+  network: 'X1 Testnet',
+  nativeCurrency: { name: 'OKB', symbol: 'OKB', decimals: 18 },
+  rpcUrls: {
+    default: {
+      http: ['https://testrpc.x1.tech'],
+    },
+    public: {
+      http: ['https://testrpc.x1.tech'],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: 'OKLink',
+      url: 'https://www.oklink.com/x1-test',
+    },
+  },
+});
+
+
+
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,
@@ -40,6 +85,8 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     base,
     zora,
     customShardeumSphinx,
+    taikoKatla,
+    x1Testnet,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   [publicProvider()]
